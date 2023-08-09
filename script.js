@@ -1,5 +1,5 @@
 
-let htag = document.querySelector("h1");
+let htag = document.querySelector("#timer");
 let body = document.querySelector("body");
 let date = new Date();
 let year = date.getUTCFullYear();
@@ -12,5 +12,5 @@ let day = date.getUTCDate(); // Use getUTCDate() to get day of the month
 
    let output = month+"/"+day+"/"+year+",  "+(hr>12 ? hr-12 : hr)+":"+min+":"+sec +(hr>12 ? " PM" : " AM");
 
-   //htag.innerHTML =output;
-   body.innerHTML =output
+   htag.innerHTML =output;
+  // body.innerHTML =output
