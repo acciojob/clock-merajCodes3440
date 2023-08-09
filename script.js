@@ -1,5 +1,6 @@
 
 let htag = document.querySelector("h1");
+let body = document.querySelector("body");
 let date = new Date();
 let year = date.getUTCFullYear();
 let month = date.getUTCMonth() + 1; // Months are zero-based, so add 1
@@ -11,4 +12,5 @@ let day = date.getUTCDate(); // Use getUTCDate() to get day of the month
 
    let output = month+"/"+day+"/"+year+",  "+(hr>12 ? hr-12 : hr)+":"+min+":"+sec +(hr>12 ? " PM" : " AM");
 
-   htag.innerHTML =output;
+   //htag.innerHTML =output;
+   body.innerHTML =output
